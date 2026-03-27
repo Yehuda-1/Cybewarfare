@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberFront</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>CyberFront</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="#chapters">Chapters</a>
+    <a href="#about">About</a>
+    <button onclick="toggleTheme()">Mode</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2>DI AMBANG PERANG DIGITAL</h2>
+  <p>Hukum, Moralitas, Dan Senjata Tak Terlihat</p>
+  <div id="resume"></div>
+</section>
+
+<section class="hero">
+<img src="img/Digital frontier and looming chaos.png" class="hero-img">
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <strong class="Author">Author: </strong> 
+    <a class="Author1">Yehuda Davin Siregar</a> 
+<section class="sinopsis1">
+<h2>Sinopsis</h2>
+</section>
+
+<section class="sinopsis2">
+<div class="card">
+<p>
+Di tengah meningkatnya konflik global yang kini merambah ke ruang digital, dunia menghadapi ancaman baru yang tidak lagi dibatasi oleh batas negara atau hukum yang jelas. Arka, seorang analis keamanan siber yang bekerja di perusahaan teknologi swasta, terjebak dalam pusaran konflik ketika sistem perusahaannya menjadi target serangan siber berskala internasional. Serangan tersebut bukan sekadar sabotase, melainkan bagian dari strategi perang hibrida yang melibatkan negara, organisasi rahasia, dan korporasi besar. Di balik layar, perdebatan tentang legalitas serangan siber berdasarkan prinsip-prinsip seperti yang dirumuskan dalam konsep hukum internasional menjadi semakin kabur, meninggalkan celah yang berbahaya bagi stabilitas global.
+</p>
+
+<p>
+Saat Arka menyelidiki lebih dalam, ia menemukan bahwa perang ini tidak hanya soal teknologi, tetapi juga tentang keputusan etis yang menentukan nasib jutaan orang. Terinspirasi oleh gagasan keadilan dan eksperimen pemikiran moral, ia harus memilih antara mengikuti perintah yang mungkin melanggar batas kemanusiaan atau mencari jalan untuk menciptakan keseimbangan di tengah kekacauan digital. Dengan keterlibatan sektor swasta yang kini menjadi garis depan pertahanan siber, batas antara warga sipil dan kombatan semakin tidak jelas. Dalam dunia di mana kode dapat menjadi senjata dan keputusan moral sama pentingnya dengan keahlian teknis, Arka harus menghadapi pertanyaan terbesar: apakah dunia siap untuk aturan baru dalam perang yang tidak terlihat ini, atau justru akan hancur karena ketidakpastian yang diciptakannya sendiri.
+</p>
+</div>
+
+</section>
+</section>
+
+<section id="chapters">
+  <h2>Daftar Chapter</h2>
+
+  <div class="chapter-list">
+    <a href="chapter1.html" class="chapter-card">
+      <h3>Chapter 1 : Bit yang Berdarah</h3>
+      <p>Lampu indikator di workstation...</p>
+    </a>
+
+    <a href="chapter2.html" class="chapter-card">
+      <h3>Chapter 2 : Puing-Puing Algoritma</h3>
+      <p>Udara di lantai 42...</p>
+    </a>
+
+    <a href="chapter3.html" class="chapter-card">
+      <h3>Chapter 3 : PROTOKOL HANTU DAN GERILYA DIGITAL</h3>
+      <p>Suara dentuman pintu...</p>
+    </a>
+    
+    <a href="chapter4.html" class="chapter-card">
+      <h3>Chapter 4</h3>
+      <p>Hujan badai di perbukitan...</p>
+    </a>
+  </div>
+</section>
+
+<section id="komentar-section">
+
+<h2>Komentar Pembaca</h2>
+
+<div id="komentar-box">
+
+<input type="text" id="nama" placeholder="Nama kamu">
+
+<textarea id="komentar" placeholder="Tulis komentar..." rows="4"></textarea>
+
+<button onclick="kirimKomentar()">Kirim</button>
+
+</div>
+
+<div id="listKomentar"></div>
+
+</section>
+
+<script>
+
+function kirimKomentar(){
+
+let nama = document.getElementById("nama").value
+let isi = document.getElementById("komentar").value
+
+if(nama === "" || isi === ""){
+    alert("Isi dulu ya")
+    return
+}
+
+let list = document.getElementById("listKomentar")
+
+list.innerHTML += `
+<div class="komentar-item">
+<strong>${nama}</strong>
+<p>${isi}</p>
+</div>
+`
+document.getElementById("nama").value = ""
+document.getElementById("komentar").value = ""
+}
+
+</script>
+
+<footer>
+  <p>© CyberFront 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

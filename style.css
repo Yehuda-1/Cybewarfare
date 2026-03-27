@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: black;
+  border-bottom: 1px solid #00f7ff;
+}
+
+nav h1 {
+  color: #00f7ff;
+  font-family: monospace;
+}
+
+nav a, button {
+  margin-left: 15px;
+  color: #00f7ff;
+  background: none;
+  border: 1px solid #00f7ff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.hero h2 {
+  color: #00f7ff;
+  font-family: monospace;
+}
+
+.Author {
+  color: #83848f;
+}
+
+.Author1 {
+  color: #00f7ff;
+  font-size: auto;
+}
+
+#chapters {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.chapter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chapter-card {
+  border: 1px solid #00f7ff;
+  padding: 20px;
+}
+
+.chapter-card:hover {
+  background: #00f7ff;
+  color: black;
+}
+
+.chapter {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  background: black;
+  color: #00f7ff;
+}
+
+.comment-item {
+  border-bottom: 1px solid #00f7ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* LIGHT MODE */
+.light-mode {
+  background: white;
+  color: black;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  border: 2px solid #00f7ff;
+  box-shadow: 0 0 2px #00f7ff;
+}
+
+.sinopsis1 {
+    text-align: center;
+}
+
+.sinopsis1 p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.sinopsis2 {
+    text-align: justify;
+}
+
+.sinopsis2 p {
+    text-indent: 2em;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+#about {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+#komentar-section {
+    text-align: center;
+}
+
+#komentar-box {
+    max-width: 600px;
+    margin: auto;
+}
+
+#komentar-box input,
+#komentar-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #0a0a0a;
+    border: 1px solid cyan;
+    color: white;
+}
+
+#listKomentar {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.komentar-item {
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+
+.chapter {
+  max-width: 700px;
+  margin: auto;
+}
+
+.chapter p {
+  text-indent: 2em;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#content {
+  max-width: 700px;
+  margin: 0 auto; /* ini yang bikin ke tengah */
+}
+
+#content p {
+  text-indent: 2em;
+  line-height: 1.8;
+  text-align: justify; /* tetap enak dibaca */
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>CyberFront</h1>
+  <div>
+    <a href="index.html">Home</a>
+    <button onclick="toggleTheme()">Mode</button>
+  </div>
+</nav>
+
+<section class="chapter">
+  <h2 id="title">Chapter</h2>
+  <p id="content"></p>
+
+  <button onclick="bookmarkChapter()">Bookmark</button>
+  <p id="bookmarkStatus"></p>
+
+  <section class="comments">
+    <h3>Komentar</h3>
+    <textarea id="commentInput"></textarea>
+    <button onclick="addComment()">Kirim</button>
+    <div id="commentList"></div>
+  </section>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
